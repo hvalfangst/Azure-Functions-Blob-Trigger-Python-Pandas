@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "be0ad930-772e-47cc-a326-4a553adda78c",
+		"name": "Azure Functions ETL using Pandas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29899311"
+	},
+	"item": [
+		{
+			"name": "Upload CSV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Name,Income,City,State,Gender,Occupation,Experience\r\nAlice,72000,New York,NY,Female,Data Scientist,3\r\nBob,58000,San Francisco,CA,Male,Software Engineer,5\r\nCharlie,82000,Los Angeles,CA,Male,Marketing Specialist,7\r\nDavid,52000,Chicago,IL,Male,Teacher,8\r\nEmma,92000,Boston,MA,Female,Financial Analyst,4\r\nFrank,70000,Miami,FL,Male,Graphic Designer,6\r\nGrace,66000,Dallas,TX,Female,Project Manager,9\r\nHank,83000,Seattle,WA,Male,Product Manager,5\r\nIvy,58000,Austin,TX,Female,Software Developer,3\r\nJack,72000,Denver,CO,Male,UX/UI Designer,6\r\nKelly,69000,Atlanta,GA,Female,HR Manager,8\r\nLeo,80000,Phoenix,AZ,Male,Data Analyst,4\r\nMia,56000,Portland,OR,Female,Marketing Coordinator,2\r\nNate,97000,San Diego,CA,Male,Software Architect,10\r\nOlivia,65000,Minneapolis,MN,Female,Research Scientist,6\r\nPaul,70000,Philadelphia,PA,Male,Content Writer,7\r\nQuinn,82000,Detroit,MI,Female,Operations Manager,8\r\nRyan,58000,Tampa,FL,Male,IT Specialist,4\r\nSara,90000,Houston,TX,Female,Financial Planner,6\r\nTom,62000,Charlotte,NC,Male,UX/UI Developer,5\r\nUrsula,75000,Raleigh,NC,Female,Software Tester,3\r\nVictor,70000,Indianapolis,IN,Male,Marketing Manager,8\r\nWendy,85000,Columbus,OH,Female,Product Designer,6\r\nXander,72000,San Antonio,TX,Male,Project Coordinator,2\r\nYara,79000,Memphis,TN,Female,Data Engineer,5\r\nZack,64000,New Orleans,LA,Male,HR Specialist,4\r\nAbby,76000,Orlando,FL,Female,IT Consultant,7\r\nBrent,92000,Salt Lake City,UT,Male,Financial Controller,9\r\nCathy,54000,Kansas City,MO,Female,Teacher Assistant,3\r\nDerek,82000,St. Louis,MO,Male,Marketing Analyst,6\r\nElla,66000,Pittsburgh,PA,Female,Software Support Specialist,4\r\nFinn,74000,Cleveland,OH,Male,Operations Analyst,5\r\nGina,61000,Cincinnati,OH,Female,Product Analyst,3\r\nHenry,88000,Oklahoma City,OK,Male,Data Architect,8\r\nIris,73000,Milwaukee,WI,Female,UX/UI Analyst,6\r\nJake,91000,Las Vegas,NV,Male,Software Manager,7\r\nKaren,65000,Sacramento,CA,Female,Project Analyst,4\r\nLiam,71000,Albuquerque,NM,Male,Financial Advisor,6\r\nMegan,82000,Tucson,AZ,Female,HR Generalist,7\r\nNoah,57000,Fresno,CA,Male,Marketing Assistant,3\r\nOlivia,87000,El Paso,TX,Female,Software Tester,5\r\nParker,72000,Long Beach,CA,Male,Data Analyst,4\r\nQuinn,79000,Virginia Beach,VA,Female,Product Manager,6\r\nRyan,62000,Oakland,CA,Male,Marketing Coordinator,3\r\nSophie,74000,Mesa,AZ,Female,Software Developer,5\r\nTyler,80000,Colorado Springs,CO,Male,Project Manager,7\r\nUrsula,71000,Arlington,VA,Female,Data Scientist,4\r\nVincent,78000,Wichita,KS,Male,Financial Analyst,6\r\nWendy,59000,Bakersfield,CA,Female,Marketing Specialist,3\r\nDave,155000,New Vegas,NV,Male,Senior Developer,15\r\nAlice,73000,New York,NY,Female,Data Scientist,3\r\nBob,59000,San Francisco,CA,Male,Software Engineer,5\r\nCharlie,81000,Los Angeles,CA,Male,Marketing Specialist,7\r\nDavid,53000,Chicago,IL,Male,Teacher,8\r\nEmma,93000,Boston,MA,Female,Financial Analyst,4\r\nFrank,71000,Miami,FL,Male,Graphic Designer,6\r\nGrace,67000,Dallas,TX,Female,Project Manager,9\r\nHank,84000,Seattle,WA,Male,Product Manager,5\r\nIvy,59000,Austin,TX,Female,Software Developer,3\r\nJack,73000,Denver,CO,Male,UX/UI Designer,6\r\nKelly,70000,Atlanta,GA,Female,HR Manager,8\r\nLeo,81000,Phoenix,AZ,Male,Data Analyst,4\r\nMia,57000,Portland,OR,Female,Marketing Coordinator,2\r\nNate,98000,San Diego,CA,Male,Software Architect,10\r\nOlivia,66000,Minneapolis,MN,Female,Research Scientist,6\r\nPaul,71000,Philadelphia,PA,Male,Content Writer,7\r\nQuinn,83000,Detroit,MI,Female,Operations Manager,8\r\nRyan,59000,Tampa,FL,Male,IT Specialist,4\r\nSara,91000,Houston,TX,Female,Financial Planner,6\r\nTom,63000,Charlotte,NC,Male,UX/UI Developer,5\r\nUrsula,76000,Raleigh,NC,Female,Software Tester,3\r\nVictor,71000,Indianapolis,IN,Male,Marketing Manager,8\r\nWendy,86000,Columbus,OH,Female,Product Designer,6\r\nXander,73000,San Antonio,TX,Male,Project Coordinator,2\r\nYara,80000,Memphis,TN,Female,Data Engineer,5\r\nZack,65000,New Orleans,LA,Male,HR Specialist,4\r\nAbby,77000,Orlando,FL,Female,IT Consultant,7\r\nBrent,93000,Salt Lake City,UT,Male,Financial Controller,9\r\nCathy,55000,Kansas City,MO,Female,Teacher Assistant,3\r\nDerek,83000,St. Louis,MO,Male,Marketing Analyst,6\r\nElla,67000,Pittsburgh,PA,Female,Software Support Specialist,4\r\nFinn,75000,Cleveland,OH,Male,Operations Analyst,5\r\nGina,62000,Cincinnati,OH,Female,Product Analyst,3\r\nHenry,89000,Oklahoma City,OK,Male,Data Architect,8\r\nIris,74000,Milwaukee,WI,Female,UX/UI Analyst,6\r\nJake,92000,Las Vegas,NV,Male,Software Manager,7\r\nKaren,66000,Sacramento,CA,Female,Project Analyst,4\r\nLiam,71000,Albuquerque,NM,Male,Financial Advisor,6\r\nMegan,83000,Tucson,AZ,Female,HR Generalist,7\r\nNoah,58000,Fresno,CA,Male,Marketing Assistant,3\r\nOlivia,88000,El Paso,TX,Female,Software Tester,5\r\nParker,73000,Long Beach,CA,Male,Data Analyst,4\r\nQuinn,80000,Virginia Beach,VA,Female,Product Manager,6\r\nRyan,64000,Oakland,CA,Male,Marketing Coordinator,3\r\nSophie,75000,Mesa,AZ,Female,Software Developer,5\r\nTyler,81000,Colorado Springs,CO,Male,Project Manager,7\r\nUrsula,72000,Arlington,VA,Female,Data Scientist,4",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hvalfangstlinuxfunctionapp.azurewebsites.net/api/upload_csv",
+					"protocol": "https",
+					"host": [
+						"hvalfangstlinuxfunctionapp",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"upload_csv"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
