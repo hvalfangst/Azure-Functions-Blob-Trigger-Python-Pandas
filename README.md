@@ -1,4 +1,4 @@
-# Azure Function ETL with Pandas and CI/CD
+# Azure Function ETL using Pandas with CI/CD
 
 
 This repository hosts a pair of Azure Functions designed for Extract, Transform, Load (ETL) operations:
